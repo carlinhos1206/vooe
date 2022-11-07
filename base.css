@@ -46,6 +46,7 @@ body{
    display: flex;
     align-items: center;
     justify-content: center;
+    
    
 }
 
@@ -53,8 +54,12 @@ body{
     right: 92%;
    bottom: 89%;
     position: fixed;
-  
- 
+  animation: fadeIn;
+  animation-duration: 3s; 
+}
+.txt{
+    right: 5%;
+    position: relative;
 }
 .txt h6{
     
