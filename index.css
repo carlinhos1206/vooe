@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+  
+
+}
+.corpo{
+    background-image: url(imgs/pexels-антон-залевський-13181168.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.menu{
+    width: 100%;
+    height: 12%;
+   
+    display: flex;
+}
+.esq{
+  
+    width: 50%;
+    height: 100%;
+ 
+}
+.dire{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+}
+.txt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 50px;
+}
+#vooe{
+    display: flex;
+    position: relative;
+    bottom: 30%;
+    left: 2%;
+}
