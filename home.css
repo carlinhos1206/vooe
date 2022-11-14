@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+  
+
+}
+.corpo{
+    background-image: url(imgs/pexels-антон-залевський-13181168.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.menu{
+    width: 100%;
+    height: 12%;
+   
+    display: flex;
+}
+.esq{
+  
+    width: 30%;
+    height: 100%;
+ 
+}
+.center{
+    width: 40%;
+    height: 100%;
+}
+.dire{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+}
+
+#vooe{
+    display: flex;
+    position: relative;
+    bottom: 30%;
+    left: 2%;
+}
+.login{
+    font-size: 15px;
+    padding: 50px;
+   
+}
+.login a {
+    font-size: 15px;
+    padding: 50px;
+    text-decoration: none;
+   
+
+}
+a h4{
+    font-family: 'Questrial', sans-serif;
+
+    background-color: black;
+    width: 80px;
+    color: white;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    position: relative;
+}
+.viagens{
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+}
+.cadd{
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    
+}
+.dados{
+    margin-top: 1%;
+    margin-left: 2%;
+    background-color: cadetblue;
+    width: 200px;
+    height: 100px;
+}
