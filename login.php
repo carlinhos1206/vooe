@@ -17,7 +17,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 </head>
 <body>
- 
+    <?php
+    @session_start();
+if(isset($_SESSION['msg'])){
+            echo "<p class=alert>$_SESSION[msg]</p>";
+            unset($_SESSION['msg']);
+        }
+
+        ?>
     <div class="box">
 
         <div class="vooe">
@@ -32,8 +39,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <fieldset>
             <legend>login</legend>
 
-            <input type="text" placeholder="E-mail">
-            <input type="password" placeholder="Senha:">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="password"  name="senha" placeholder="Senha:">
             <input id="dif" type="submit" value="CONTINUAR">
 
             <h4>Ainda não tem cadastro? <a href="cadastro.php"> cadastre-se</a></h4>

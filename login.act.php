@@ -1,12 +1,14 @@
 <?php
 extract($_POST);
-//$senha = md5($senha);
+var_dump($_POST);
+$senha = md5($senha);
 
 
 require('connect.php');
 @session_start();
-$buscar = mysqli_query($con, "select * from `tb_cadastro` where `email` = $email" );
+$buscar = mysqli_query($con, "select * from `tb_cadastro` where `email` = '$email'" );
 $msg = "email ou senha invalidos";
+$target = "";
 
     if($buscar -> num_rows == 1){
         $login = mysqli_fetch_array($buscar);
@@ -14,12 +16,18 @@ $msg = "email ou senha invalidos";
             $_SESSION['login'] = true;
             $_SESSION['email'] = $login['email'];
             $target = "location:home.php";
+            $msg = "";
         } else {
             $target = "location:login.php";
             $msg = "email ou senha invalidos ";
 
         }
 
+    }else{
+        $msg = "email ou senha invalidos ";
+        $target = "location:login.php";
     }
+    echo "<p>$msg</p>";
+    echo "<p>$target</p>";
     $_SESSION['msg'] = $msg;
     header($target);
