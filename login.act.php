@@ -1,3 +1,4 @@
+
 <?php
 extract($_POST);
 var_dump($_POST);
@@ -15,13 +16,14 @@ $target = "";
         if($senha === $login['senha']){
             $_SESSION['login'] = true;
             $_SESSION['email'] = $login['email'];
-            $target = "location:home.php";
+            $target = "location:lista.php";
             $msg = "";
-        } else {
-            $target = "location:login.php";
-            $msg = "email ou senha invalidos ";
-
         }
+        // } else {
+        //     $target = "location:lista.php";
+        //     $msg = "email ou senha invalidos ";
+
+        // }
 
     }else{
         $msg = "email ou senha invalidos ";
