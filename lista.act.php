@@ -5,7 +5,7 @@
     extract($_FILES);
     require('connect-viagem.php');
   
-    $endereco = "imgs/".md5(time()).".jpg";
+    $endereco = "img-viagem/".md5(time()).".jpg";
     move_uploaded_file($foto['tmp_name'],$endereco);
     
 

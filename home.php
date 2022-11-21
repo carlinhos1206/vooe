@@ -27,7 +27,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <div class="corpo">
         <div class="menu">
             <div class="esq">
-                <img id="vooe" src="imgs/branco.png" alt="" width="110px" height="110px">
+                <img id="vooe" src="imgs/LOGO.png" alt="" width="110px" height="110px">
             </div>
             <div class="center">
 
@@ -50,37 +50,66 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
             echo "<p class=alert>$_SESSION[msg]</p>";
             unset($_SESSION['msg']);
         }
+        ?>
+
+
+
+<?php
+
+        require('connect-viagem.php');
+        $cadastros = mysqli_query($con,"Select * From `tb_viagem` ORDER BY `codigo`");
+        echo "<div class=\"box\">";
+        while($contato = mysqli_fetch_array($cadastros)){
+          echo "<div>";
+          echo "<p>Local: $contato[local]</p>";
+          echo "<p>Data: $contato[data]</p>";
+          echo "<p>Preço: $contato[preco]</p>";
+
+          
+  
+          //Validação de foto
+          if($contato['foto'] != ""){
+          echo "<p><img src=$contato[foto]></p>";
+          }else{
+          echo "<p><img src=imgs/default.png></p>";
+          }
+
+          echo "<h3><a href=login.php>ACESSAR</a></h3>";
+        }
+
        
-            require('connect.php');
-            echo "<div class =\"cadd\">";
-            $contatos = mysqli_query($con, "Select * from `tb_cadastro`");
+        
+            // require('connect.php');
+            // echo "<div class =\"cadd\">";
+            // $contatos = mysqli_query($con, "Select * from `tb_cadastro`");
           
             
-            while($con = mysqli_fetch_array($contatos)){
-                echo "<div class =\"dados\">";
+            // while($con = mysqli_fetch_array($contatos)){
+            //     echo "<div class =\"dados\">";
            
-                echo "<p>Código: $con[codigo] </p>";
-                echo "<p>Nome: $con[nome] </p>";
-                echo "<p>Email: $con[email] </p>";
-                echo "<p>cpf: $con[cpf] </p>";
+            //     echo "<p>Código: $con[codigo] </p>";
+            //     echo "<p>Nome: $con[nome] </p>";
+            //     echo "<p>Email: $con[email] </p>";
+            //     echo "<p>cpf: $con[cpf] </p>";
                 
                  
                
-                 echo "</div>";
+            //      echo "</div>";
               
-            }
+        //     // }
            
-            echo "</div>";
-        ?>
-        <script>
-        function confirmar(codigo){
-            resposta = confirm ("Deseja excluir o registro "+codigo+"?");
-            if(resposta == true){
-                window.location = "excluir.php?cod="+codigo;
-            }
-        }
+        //     echo "</div>";
+        // 
+        // <script>
+        // function confirmar(codigo){
+        //     resposta = confirm ("Deseja excluir o registro "+codigo+"?");
+        //     if(resposta == true){
+        //         window.location = "excluir.php?cod="+codigo;
+        //     }
+        // }
 
-        </script>
+        // </script>
+        ?>
 
 
 </body>

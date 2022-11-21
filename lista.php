@@ -12,6 +12,7 @@
 
 <?php include('menu.php');?>
 
+
 <?php
 ?>
 
@@ -33,21 +34,37 @@
         echo "<p><img src=imgs/default.png></p>";
         }
         //
+
+        // $usuarios = mysqli_query($con,"Select * From `tb_cadastro`");
+        // $usuario = mysqli_fetch_array($usuarios);
+        // var_dump($usuario);
+        @session_start();
+
+          if($_SESSION['funcao'] == "admin"){
+            echo "<p><a href=alterar.php?cod=$contato[codigo]>Alterar</a></p>";
+            echo "<p><a href=javascript:confirmar($contato[codigo])>Excluir</a></p>";
+          }else{
+            echo "<p><a href=comprar.php?cod=$contato[codigo]>Comprar</a></p>";
+          }
+
           
-        echo "<p><a href=alterar.php?cod=$contato[codigo]>Alterar</a></p> ";
-        echo "<p><a href=javascript:confirmar($contato[codigo])>Excluir</a></p>";
+        
 
     
 
         echo "</div>";
       }
         echo "</div>";
+
+        
+
+
 ?>
 
 <script>
   
   function confirmar(codigo){
-    resposta = confirm("Deseja excluir o registro"+codigo+"?");
+    resposta = confirm("Deseja excluir o registro" + "-"+codigo+"?");
 
     if(resposta == true){
       window.location = "Excluir.php?cod="+codigo;
@@ -55,11 +72,7 @@
   }
     
   </script>
-  
-
-
-
-    
+ 
 </body>
 </html>
 

@@ -16,6 +16,8 @@ $target = "";
         if($senha === $login['senha']){
             $_SESSION['login'] = true;
             $_SESSION['email'] = $login['email'];
+            $_SESSION['funcao'] = $login['funcao'];
+
             $target = "location:lista.php";
             $msg = "";
         }

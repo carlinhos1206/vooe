@@ -18,12 +18,14 @@ if(mysqli_query($con, "UPDATE `tb_viagem` SET `local` = '$local',
                                                 `preco` = '$preco',
                                                 `foto` = '$endereco'
                                                 WHERE `codigo` = '$codigo';")){
-                                                    
                                                     $msg = " Alterado com sucesso!";
                                                 }else{
                                                     $msg = " Erro ao sucesso!";
-                                                }
-header("location:lista.php");      
+                                                }                                                
+                                                
+            
+                                                
+  header("location:lista.php");      
 
 //echo mysqli_error($con);
 ?>

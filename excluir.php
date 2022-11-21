@@ -13,6 +13,7 @@ if(mysqli_query($con, "DELETE FROM `tb_viagem` WHERE `tb_viagem`.`codigo` = $cod
 @session_start();
 $_SESSION['msg'] = $msg;
 
+
 header("location: lista.php");
 
 

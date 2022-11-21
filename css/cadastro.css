@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(imgs/cad.jpg);
+    background-image: url(../imgs/cad.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
