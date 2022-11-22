@@ -35,7 +35,9 @@ if(isset($_SESSION['msg'])){
         <h6>Faça seu login e começe a viajar</h6>
     </div>
     <div class="log">
+    <div></div>
      <form action="login.act.php" method="post">
+        
         <fieldset>
             <legend>login</legend>
 
