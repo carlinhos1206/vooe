@@ -27,7 +27,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <div class="corpo">
         <div class="menu">
             <div class="esq">
-                <img id="vooe" src="imgs/LOGO.png" alt="" width="110px" height="110px">
+                <img id="vooe" src="imgs/branco.png" alt="" width="110px" height="110px">
             </div>
             <div class="center">
 
@@ -60,22 +60,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         $cadastros = mysqli_query($con,"Select * From `tb_viagem` ORDER BY `codigo`");
         echo "<div class=\"box\">";
         while($contato = mysqli_fetch_array($cadastros)){
-          echo "<div>";
-          echo "<p>Local: $contato[local]</p>";
-          echo "<p>Data: $contato[data]</p>";
-          echo "<p>Preço: $contato[preco]</p>";
-
-          
-  
+          echo "<div class=\"sc\">";
+         
           //Validação de foto
           if($contato['foto'] != ""){
-          echo "<p><img src=$contato[foto]></p>";
+          echo "<p><img src=$contato[foto]></p> ";
           }else{
           echo "<p><img src=imgs/default.png></p>";
           }
 
-          echo "<h3><a href=login.php>ACESSAR</a></h3>";
+          echo "<p id= pag >Local: $contato[local]</p>";
+          echo "<p id= pag >Data: $contato[data]</p>";
+          echo "<p id= pag >Preço: $contato[preco]</p>";
+          echo "<h3 id= pag ><a href=login.php>COMPRAR</a></h3>";
+
+          echo "</div>";
+         
         }
+        echo "</div>";
 
        
         

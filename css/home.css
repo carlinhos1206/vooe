@@ -7,7 +7,7 @@
 
 }
 .corpo{
-    background-image: url(imgs/pexels-антон-залевський-13181168.jpg);
+    background-image: url(../imgs/home.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,4 +91,36 @@ a h4{
     background-color: cadetblue;
     width: 200px;
     height: 100px;
+}
+.box{
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+  
+}
+
+.sc{
+    background-color: rgb(5, 203, 190);
+   margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+    margin-top: 10%;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    
+}
+p img{
+ 
+    width:100%;
+    height: 300px;
+}
+#pag{
+    font-size: 20px;
+    padding-top: 20px;
 }
