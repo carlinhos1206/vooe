@@ -42,6 +42,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <div class="viagens">
 
 
+<<<<<<< HEAD
             
         </div>
         <?php
@@ -49,6 +50,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         if(isset($_SESSION['msg'])){
             echo "<p class=alert>$_SESSION[msg]</p>";
             unset($_SESSION['msg']);
+=======
+
+<?php include('pesquisa.php');?>
+
+<?php
+      require('connect-viagem.php');
+      $cadastros = mysqli_query($con,"Select * From `tb_viagem` ORDER BY `codigo`");
+      echo "<div class=\"box\">";
+      while($contato = mysqli_fetch_array($cadastros)){
+        echo "<div>";
+        // echo "<p>Código: $contato[codigo]</p>";
+        echo "<p>Local: $contato[local]</p>";
+        echo "<p>Data: $contato[data]</p>";
+        echo "<p>Preço: $contato[preco]</p>";
+
+        //Validação de foto
+        if($contato['foto'] != ""){
+        echo "<p><img src=$contato[foto]></p>";
+        }else{
+        echo "<p><img src=imgs/default.png></p>";
+>>>>>>> ea86b34f5eba43ed7d48fe62235458c6d3109942
         }
         ?>
 
