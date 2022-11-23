@@ -44,17 +44,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
             
         </div>
-        <?php
-        session_start();
-        if(isset($_SESSION['msg'])){
-            echo "<p class=alert>$_SESSION[msg]</p>";
-            unset($_SESSION['msg']);
-        }
+          <?php
+        // session_start();
+        // if(isset($_SESSION['msg'])){
+        //     echo "<p class=alert>$_SESSION[msg]</p>";
+        //     unset($_SESSION['msg']);
+        // }
         ?>
 
 
 
 <?php
+
 
         require('connect-viagem.php');
         $cadastros = mysqli_query($con,"Select * From `tb_viagem` ORDER BY `codigo`");

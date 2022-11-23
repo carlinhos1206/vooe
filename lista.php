@@ -13,8 +13,8 @@
 <?php include('menu.php');?>
 
 
-<?php
-?>
+
+<?php include('pesquisa.php');?>
 
 <?php
       require('connect-viagem.php');
@@ -22,7 +22,7 @@
       echo "<div class=\"box\">";
       while($contato = mysqli_fetch_array($cadastros)){
         echo "<div>";
-        echo "<p>Código: $contato[codigo]</p>";
+        // echo "<p>Código: $contato[codigo]</p>";
         echo "<p>Local: $contato[local]</p>";
         echo "<p>Data: $contato[data]</p>";
         echo "<p>Preço: $contato[preco]</p>";
