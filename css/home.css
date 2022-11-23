@@ -104,23 +104,28 @@ a h4{
 }
 
 .sc{
-    background-color: rgb(5, 203, 190);
    margin-left: 20px;
    display: flex;
+   border-radius: 10px;
    flex-direction: column;
-    margin-top: 10%;
+    margin-top: 5%;
     position: relative;
     text-align: center;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 320px;
     
 }
 p img{
- 
+ border-radius: 10px;
     width:100%;
-    height: 300px;
+    height: 160px;
 }
 #pag{
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 12px;
+}
+#pag a{
+    color: rgb(17, 255, 0);
+   
+    text-decoration: none;
 }

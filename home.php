@@ -71,7 +71,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
           echo "<p id= pag >Local: $contato[local]</p>";
           echo "<p id= pag >Data: $contato[data]</p>";
-          echo "<p id= pag >Preço: $contato[preco]</p>";
+          echo "<p id= pag  >Preço: $contato[preco]</p>";
           echo "<h3 id= pag ><a href=login.php>COMPRAR</a></h3>";
 
           echo "</div>";

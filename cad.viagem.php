@@ -39,7 +39,7 @@
                 <p>Foto:</p>
                 <input id="ft" type="file" name="foto" id="" >
 
-                <p><input type="submit" value="CONTINUAR" id=""></p>
+                <p><input id="sub" type="submit" value="CONTINUAR" id=""></p>
 
                 </div>
         

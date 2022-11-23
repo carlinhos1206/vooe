@@ -78,6 +78,11 @@ padding-top: 7px;
 padding-left: 10px;
 
 }
+#sub{
+    width: 100px;
+    background-color: rgb(53, 125, 232);
+    
+}
 
 fieldset{
     border: none;
