@@ -12,7 +12,13 @@
 </head>
 <body>
     
+    
     <div class="pai">
+
+        <div class="home">
+            <a href="home.php">HOME</a>
+        </div>
+
         <form action="cad.cadastro.php" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>CADASTRO</legend>
@@ -42,8 +48,6 @@
 
                 <br><br>
                 <p><input type="submit" value="CONTINUAR" id=""></p>
-
-                <!-- Login: vitor@teste.com / Senha: 12345 -->
 
                 </div>
             </fieldset>

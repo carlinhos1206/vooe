@@ -55,3 +55,18 @@ input{
     border-radius: 20px;
     border: none;
 }
+input[type='submit']:hover{
+    cursor: pointer;
+}
+
+.home{
+    height: 60px;
+    width: 30%;
+    padding-top: 20px;
+    padding-left: 60px;
+}
+
+.home a{
+   text-decoration: none;
+   color: black;
+}

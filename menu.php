@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!-- Arrumar cor do menu -->
 
 <ul>
     <?php
@@ -17,17 +18,12 @@
        echo "<li class=right><a href=cad.viagem.php>ADICIONAR VIAGEM</a></li>";
        echo "<li class=left><a href=sair.php>SAIR</a></li>";
       }else{
+  
         echo "<li class=left><a href=sair.php>SAIR</a></li>";
       }
 
     ?>
-
-    
-   
-
-
-    
-</ul>
+    </ul>
 
 </body>
 </html>
