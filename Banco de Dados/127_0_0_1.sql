@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 21-Nov-2022 às 17:10
+-- Tempo de geração: 24-Nov-2022 às 05:50
 -- Versão do servidor: 5.7.36
 -- versão do PHP: 7.4.26
 
@@ -62,15 +62,17 @@ CREATE TABLE IF NOT EXISTS `tb_viagem` (
   `preco` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `foto` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=26 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Extraindo dados da tabela `tb_viagem`
 --
 
 INSERT INTO `tb_viagem` (`codigo`, `local`, `data`, `preco`, `foto`) VALUES
-(20, 'Rua', '2022-11-30', '12', 'img-viagem/70a57748a426330dec2616137d603d8a.jpg'),
-(21, 'Pablo Vittar', '2022-11-30', '1500', 'img-viagem/ed1d24b916c7ee278f17ba0ba0151845.jpg');
+(25, 'Cataratas do Iguaçu', '2023-08-04', '2000', 'img-viagem/7cb4f976e2b98bc88ede50a0c3d0e789.jpg'),
+(22, 'Arraial do Cabo', '2023-02-09', '2000', 'img-viagem/e1ada7b76563df568bfaf1d453050381.jpg'),
+(23, 'Santorini - Grécia', '2023-07-24', '6000', 'img-viagem/7b0a5011c82bee99469eb8f5d4f4198e.jpg'),
+(24, 'Bora Bora Polinésia Francesa', '2023-08-08', '7000', 'img-viagem/3418c052de95de3707a35f5dfd34d8a5.jpg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
