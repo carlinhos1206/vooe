@@ -17,29 +17,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
 </head>
 <body>
-    <?php
-    @session_start();
-if(isset($_SESSION['msg'])){
-            echo "<p class=alert>$_SESSION[msg]</p>";
-            unset($_SESSION['msg']);
-        }
-
-        ?>
+    
     <div class="box">
 
         <div class="vooe">
-        <img src="imgs/branco.png" alt="" width="150px" height="150px">
+        <img src="imgs/branco.png" alt="" width="100%" height="100%">
     </div>
     <div class="txt">
         <h1>Seja bem vindo</h1>
         <h6>Faça seu login e começe a viajar</h6>
     </div>
     <div class="log">
-    <div></div>
+    
      <form action="login.act.php" method="post">
         
         <fieldset>
             <legend>login</legend>
+
+            <div class="msg-php">
+            <?php
+            @session_start();
+            if(isset($_SESSION['msg'])){
+            echo "<p class=alert>$_SESSION[msg]</p>";
+            unset($_SESSION['msg']);
+            }
+            ?>
+            </div>
 
             <input type="text" name="email" placeholder="E-mail">
             <input type="password"  name="senha" placeholder="Senha:">
