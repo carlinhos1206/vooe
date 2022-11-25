@@ -27,7 +27,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     
 <div class="thanks">
     <h1>Uma mensagem de confirmação cairá em instantes no seu email </h1>
-    <h4><a href="listar.php"> Clique aqui para voltar para o início </a></h4>
+    <h4><a href="lista.php"> Clique aqui para voltar para o início </a></h4>
 </div>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="alter.css">
+    <link rel="stylesheet" href="css/alter.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alterar</title>
@@ -30,10 +30,10 @@
 ?> 
 </div>
 
-<div class="">
-<div class="">
+<div class="pai">
+
     <fieldset id="">
-        <legend>Formulario de cadastro</legend>
+        <legend>Alterar</legend>
         
         <form action="alterar.act.php" method="post" onsubmit="return verifica(local.value,data.value,preco.value)" enctype="multipart/form-data">
         <input type="hidden" name="codigo"  value="<?php echo $contato['codigo'];?>">
@@ -62,7 +62,6 @@
     ?>
     </fieldset>
 
-</div>   
 </div>
     
 </body>
