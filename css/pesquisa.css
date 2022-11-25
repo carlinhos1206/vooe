@@ -9,10 +9,10 @@ input[type='text']{
     text-align: center;
 }
 #result{
-    height: 400px;
+    height: 800px;
     width: 100%;
     display: flex;
-    /* background-color:blue ; */
+     /* background-color:blue ;  */
      
    
 }

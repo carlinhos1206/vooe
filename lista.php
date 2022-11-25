@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/lista.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
     <title>Compras e Vendas</title>
 
 </head>
@@ -26,19 +29,20 @@
       echo "<div class=\"box\">";
       while($contato = mysqli_fetch_array($cadastros)){
         echo "<div class=\"sc\">";
+        //Validação de foto
+        if($contato['foto'] != ""){
+          echo "<p><img src=$contato[foto]></p>";
+          }else{
+          echo "<p><img src=imgs/default.png></p>";
+          }
+          //
         // echo "<p>Código: $contato[codigo]</p>";
         echo "<p id= pag >Local: $contato[local]</p>";
         echo "<p id= pag >Data: $contato[data]</p>";
         echo "<p id= pag >Preço: $contato[preco]</p>";
         
 
-        //Validação de foto
-        if($contato['foto'] != ""){
-        echo "<p><img src=$contato[foto]></p>";
-        }else{
-        echo "<p><img src=imgs/default.png></p>";
-        }
-        //
+        
 
         // $usuarios = mysqli_query($con,"Select * From `tb_cadastro`");
         // $usuario = mysqli_fetch_array($usuarios);

@@ -3,11 +3,13 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
 
 }
 body{
-    background-color: #30343f;
-    color: #f0f0f0;
+    background-color: #ffffff;
+    color: #000000;
   
 }
 .box{
@@ -17,6 +19,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 
     
   
@@ -40,10 +43,16 @@ body{
    }
    #pag{
     font-size: 20px;
-    padding-top: 12px;
+    padding-top: 10px;
 }
 #pag a{
     color: rgb(17, 255, 0);
    
     text-decoration: none;
 }  
+p a{
+    margin: 30px;
+    font-size: 20px;
+ color:#f50303 ;
+ text-decoration: none;
+}

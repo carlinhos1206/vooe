@@ -9,13 +9,13 @@ ul li{
     list-style: none;
     width: 100%;
     padding-top: 20px;
-    background-color: #43c59e;
+    background-color: #000000;
     ;
     /* padding-left: 30%; */
 }
 li a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .right{
     padding-left: 10%;

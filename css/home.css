@@ -6,18 +6,21 @@
   
 
 }
+
 .corpo{
-    background-image: url(../imgs/home.jpg);
+    background-image: url(../imgs/mex.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 880px;
+    position: fixed;
 }
 .menu{
     width: 100%;
-    height: 12%;
+    height: 60px;
     display: flex;
+ 
 }
 .esq{
   
@@ -41,7 +44,7 @@
 #vooe{
     display: flex;
     position: relative;
-    bottom: 30%;
+    bottom: 40%;
     left: 2%;
 }
 .login{
@@ -92,27 +95,47 @@ a h4{
     height: 100px;
 }
 .box{
+    background-color: #fff;
+    top: 880px;
     display: flex;
     width: 100%;
+    height: auto;
     position: relative;
     align-items: center;
     justify-content: center;
-
     flex-wrap: wrap;
+    
   
 }
 
 .sc{
+    background-color: rgb(0, 0, 0);
    margin-left: 20px;
    display: flex;
+   color: rgb(255, 255, 255);
    border-radius: 10px;
    flex-direction: column;
     margin-top: 5%;
+   
+  margin: 30px;
     position: relative;
     text-align: center;
     width: 300px;
     height: 320px;
     
+}
+h1{
+    font-size: 100px;
+    font-family: 'Mulish', sans-serif;
+
+}
+.corpo h1{
+    color: aliceblue;
+    margin-top: 20%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 p img{
  border-radius: 10px;
